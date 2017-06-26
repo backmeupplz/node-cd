@@ -14,7 +14,7 @@ module.exports.create = create
 GitHub.prototype.post = function (req, res) {
   var authorizedIps = config.security.authorizedIps
   var githubIps = config.security.githubIps
-  var payload = req.body
+  var payload = JSON.parse(req.body.payload)
 
   if (!payload) {
     console.log('No payload')

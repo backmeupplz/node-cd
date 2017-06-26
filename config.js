@@ -26,7 +26,7 @@ var Private = {
   },
   action: {
     exec: {
-      github: './github.sh',
+      github: '/home/node-cd/github.sh',
       bitbucket: './bitbucket.sh',
       contentful: './contentful.sh'
     }
